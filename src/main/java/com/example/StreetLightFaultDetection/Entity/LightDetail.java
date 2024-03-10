@@ -18,8 +18,11 @@ public class LightDetail {
     @Column(name = "place")
     private String place;
 
-    @Column(name = "location")
-    private String location;
+    @Column(name = "lat")
+    private float lat;
+
+    @Column(name = "lng")
+    private float lng;
 
     @Column(name = "fault")
     private boolean fault;
