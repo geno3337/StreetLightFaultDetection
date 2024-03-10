@@ -30,8 +30,8 @@ public class controller {
         return service.getAllLightDetails(page, size, sort, key);
     }
 
-    @GetMapping(value = "/faultDetected/{id}")
-    public String faultDetected(@PathVariable("id") int id,@RequestParam boolean status){
+    @PostMapping(value = "/faultDetected")
+    public String faultDetected(@RequestParam("id") int id,@RequestParam boolean status){
         return service.faultDetected(id,status);
     }
 }
